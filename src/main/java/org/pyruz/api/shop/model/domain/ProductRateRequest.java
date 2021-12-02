@@ -15,5 +15,5 @@ public class ProductRateRequest {
     @NotNull
     @ApiModelProperty(name = "rate", value = "1-5", required = true)
     @Range(min=1, max=5)
-    private Float rate;
+    private Integer rate;
 }

@@ -130,7 +130,7 @@ public class ProductService extends BaseService implements IProductService {
                     Rate.builder()
                             .product(product)
                             .user(userService.findUserByUsername(getUsername()))
-                            .rate(0F)
+                            .rate(0)
                             .build()
             );
             return BaseDTO.builder()

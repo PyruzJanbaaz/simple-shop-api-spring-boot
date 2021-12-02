@@ -39,9 +39,9 @@ public class User extends BaseEntity<Integer> {
     private List<Role> roles;
 
     @ToString.Exclude
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL ,mappedBy = "user")
-    @PrimaryKeyJoinColumn
-    private Rate rate;
+    @JsonManagedReference
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private List<Rate> rate;
 
     @ToString.Exclude
     @JsonManagedReference

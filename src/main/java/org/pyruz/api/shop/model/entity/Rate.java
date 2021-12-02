@@ -16,7 +16,7 @@ import javax.persistence.*;
 public class Rate extends BaseEntity<Integer> {
 
     @Column(name = "rate")
-    private Float rate;
+    private Integer rate;
 
     @ToString.Exclude
     @JsonBackReference
@@ -25,7 +25,7 @@ public class Rate extends BaseEntity<Integer> {
     private Product product;
 
     @ToString.Exclude
-    @OneToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
 
