@@ -17,7 +17,7 @@ Open the pom.xml file for spring-aop configuration:
       <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.3.RELEASE</version>
+        <version>2.5.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
       </parent>
       
