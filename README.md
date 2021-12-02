@@ -1,4 +1,4 @@
-# simple-shop-api
+# Simple Shop APIs
 Simple shop API created by spring boot, spring security, spring data!
 
 I create a Spring Boot project(Rest APIs) for a simple shop. You need the following tools and technologies to develop the same.
